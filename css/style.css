@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap');
+
+:root{
+    --primary-color: #B56357;
+    --secondary-color: #b4dbc0;
+    --dark-color: #a7b3a5;
+    --light-color: #eae3ea;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Karla', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+h1, h2, h3 {
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+h3{
+    font-size: 40px;
+}
+
+p{
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+img {
+    width: 100%;
+}
+
+
+/* Navbar */
+.navbar {
+    background-color: var(--primary-color);
+    color: #fff;
+    height: 60px;
+}
+
+.logo {
+    font-size: 30px;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar a {
+    color: #fff;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+.navbar .flex{
+    justify-content: space-between;
+}
+
+.navbar a:hover{
+    border-bottom: 2px #333 solid;
+}
+
+
+/* Banner */
+.banner {
+    height: 600px;
+    background-color: var(--light-color);
+    color: #333;
+    position: relative;
+}
+
+.banner h1 {
+    font-size: 80px;
+    border-bottom:1px #333 solid;
+    padding: 10px 0;
+}
+
+
+.banner .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    overflow: visible;
+}
+
+.ilustration {
+    width: 500px;
+    justify-self: flex-end;
+    
+}
+
+
+/* Profile */
+
+.profile {
+    height: 600px;
+    background-color: #fff;
+    color: #333;
+    position: relative;
+}
+
+.profile i {
+    font-size: 20px;
+}
+
+.biography {
+    margin: 20px;
+}
+
+.profile img {
+    width: 300px;
+    border-radius: 100px;
+}
+
+
+/* Experience */
+.experience {
+    height: 850px;
+    background-color:#a7b3a5 ;
+    color: #333;
+    position: relative;
+}
+
+.experience h3 {
+    font-size: 30px;
+}
+
+.experience .grid {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.experience .grid > *:nth-child(1),
+.experience .grid > *:nth-child(4){
+    grid-column: 1/span 2;
+}
+
+/* Skills */
+.skills {
+    height: 800px;
+    background-color:#eae3ea ;
+    color: #333;
+    position: relative;
+}
+
+.skills .card{
+    text-align: center;
+    margin: 5px 10px 5px;
+}
+
+.skills .card h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.skills .ilustration {
+    justify-self: flex-start;
+}
+
+.skills img {
+    width: 400px;
+}
+
+/* Contact */
+.contact {
+    height: 600px;
+    background-color:#fff;
+    color: #333;
+    position: relative;
+}
+
+.contact-form{
+    top: 60px;
+    height: 350px;
+    width: 500px;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.contact-form .form-control{
+    margin: 30px 0;
+}
+
+.contact-form input[type='text'],
+.contact-form input[type='email']{
+    border: 0;
+    border-bottom: 1px solid #b4becb;
+    width: 100%;
+    padding: 3px;
+    font-size: 16px;
+}
+
+.contact-form input:focus{
+    outline: none;
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    background: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-outline{
+    background-color:transparent ;
+    border: 1px #fff solid;
+}
+
+.btn:hover{
+    transform: scale(0.98);
+}
+
+/* Footer */
+.footer {
+    height: 100px;
+    background-color:#333;
+    color: #fff;
+    position: relative;
+}
+
+.footer h1 {
+    font-size: 25px;
+    margin: 20px;
+}
+
+/* Utilities */
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px; 
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+}
+
+.grid-3{
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.text-center{
+    text-align: center;
+}
+
+.card{
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 10px;
+}
+
+.titles {
+    margin: 30px 0;
+    padding: 20px;
+    border-bottom: 1px #333 solid;
+}

@@ -1,78 +1,186 @@
 <!DOCTYPE html>
-
+<html lang="en">
 <head>
-    <title>Eldar Kepic Resume</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eldar Kepic</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-    <h1>Eldar Kepic</h1>
-    <img src="image1.JPG" alt="profile picture" style="width:356px;height:300px;">
-    <ul>
-        <li>Dzemala Bijedica 129, 71000 Sarajevo</li>
-        <li>+387 60 30 78 999</li>
-        <li>ekepic@student.ius.edu.ba</li>
-    </ul>
 
-    <p>Hardworking and enthusiastic Computer Science student. 
-    Seeking to apply my knowledge of Web Application Development</p>
-    <hr>
+    <!-- Navigation -->
+    <div class="navbar">
+        <div class="container flex">
+            <h1 class="logo"><a href="#">EK</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#profile">Profile</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
 
-    <h2>Experience</h2>
-    2018 – PRESENT
-    <ul>
-        <li>Developing cross-platform application for running and organizing small businesses, utilizing .Net Core and Xamarin</li>
-        <li>Building Voting System application using .Net Core and Blazor, as part of larger project in a local organization</li>
-        <li>Designing Historical Tour application where focus was on going through all the stages of developing an application, <br>from planning to final product, testing and updateing. 
-            Enforcement of Agile Software Development.
-        </li>
-        <li>Working on few Arduino projects with C/C++ programming</li>
-        <li>Data Analysis, data structures and visualization in Python</li>
-        <li>Library Web application using Django framework</li>
-    </ul>
-    <hr>
+    <!-- Banner -->
+    <section class="banner">
+        <div class="container grid">
+            <div class="text-center">
+                <h1>Eldar Kepic</h1>
+                <h2>Resume</h2>
+            </div>
+            <div class="ilustration">
+                <img src="images/control.svg" alt="">
+            </div>
+        </div>
+    </section>
 
-    <h2>Skills</h2>
-    <ul>
-        <li>OOP</li>
-        <li>C#</li>
-        <li>ASP .Net Core</li>
-        <li>SQL Databases</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Java</li>
-        <li>Xamarin</li>
-        <li>Python</li>
-        <li>Django REST</li>
-        <li>C/C++</li>
-        <li>Git</li>
-    </ul>
-    <hr>
+    <!-- Profile -->
+    <section id="profile" class="profile">
+        
+        <div class="container">
+            <h2 class="text-center titles">Profile</h2>
+            <div class="grid">
+                <div>
+                    <img src="images/profile.JPG" alt="">
+                </div>
+                <div class="text-center">
+                    <h3>Biography</h3>
+                    <p class="biography">
+                        I am a fourth year student who is eager to apply his knowledge in Web Application Development. My focus is on back-end development in which I also have experience working on various projects during my studies. I love chalanges in which I can show my abilities and from which I can gain valuable knowledge and experience.
+                    </p>
+                    <i>“Develop a passion for learning. If you do, you will never cease to grow.” – Anthony J. D’Angelo</i>
+                    
+                </div>
 
-    <h2>Languages</h2>
-    <ul>
-        <li>Bosnian</li>
-        <li>English</li>
-        <li>Turkish</li>
-        <li>German</li>
-    </ul>
-    <hr>
+            </div>
+        </div>
+    </section>
 
-   <h2>Education</h2>
-   2018 - PRESENT
-   <p>Computer Science and Engineering/International University of Sarajevo</p>
-   <hr>
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="text-center titles">
+                <h2>Experience</h2>
+                <h3>2018 - PRESENT</h3>
+            </div>
+            <div class="grid">
+            <div class="card flex">
+                <p>Developing cross-platform application for running and organizing small businesses, utilizing .Net Core and Xamarin</p>
+            </div>
+            <div class="card flex">
+                <p>Data Analysis, data structures and visualization in Python</p>
+            </div>
+            <div class="card flex">
+                <p>Library Web application using Django framework</p>
+            </div>
+            
+            <div class="card flex">
+                <p>Building Voting System application using .Net Core and Blazor, as part of larger project in a local organization</p>
+            </div>
+            <div class="card flex">
+                <p>Working on few Arduino projects with C/C++ programming</p>
+            </div>
+            <div class="card flex">
+                <p>Application for price estimate of real estate in Sarajevo. Machine learning with R</p>
+            </div>
+        </div>
+        </div>
+    </section>
 
-   <h2>Contact me</h2>
-   <input type="text" value="Name"/><br>
-   <input type="text" value="Email address"/><br>
-   <input type="text" value="Phone number"/><br>
-   <textarea>
-       Message
-   </textarea> <br>
-   <input type="submit" />
+    <!-- Skills -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="text-center titles">Skills</h2>
+            <div class="grid flex">
+                <div class="proud">
+                    <img src="images/proud.svg" alt="">
+                </div>
+                <div class="grid grid-3">
+                    <div class="card">
+                        <h4>OOP</h4>
+                    </div>
+                    <div class="card">
+                        <h4>C#</h4>
+                    </div>
+                    <div class="card">
+                        <h4>ASP .Net Core</h4>
+                    </div>
+                    <div class="card">
+                        <h4>SQL Databases</h4>
+                    </div>
+                    <div class="card">
+                        <h4>HTML</h4>
+                    </div>
+                    <div class="card">
+                        <h4>CSS</h4>
+                    </div>
+                    <div class="card">
+                        <h4>JavaScript</h4>
+                    </div>
+                    <div class="card">
+                        <h4>Node.js</h4>
+                    </div>
+                    <div class="card">
+                        <h4>React</h4>
+                    </div>
+                    <div class="card">
+                        <h4>Java</h4>
+                    </div>
+                    <div class="card">
+                        <h4>Xamarin</h4>
+                    </div>
+                    <div class="card">
+                        <h4>Python</h4>
+                    </div>
+                    <div class="card">
+                        <h4>Django</h4>
+                    </div>
+                    <div class="card">
+                        <h4>C/C++</h4>
+                    </div>
+                    <div class="card">
+                        <h4>Git</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="text-center titles">Contact me</h2>
+            <div class="flex">
+                <div class="contact-form card">
+                    <form>
+                        <div class="form-control">
+                            <input type="text" name="name" placeholder="Name" required>
+                        </div>
+                        <div class="form-control">
+                            <input type="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-control">
+                            <input type="text" name="phone" placeholder="Phone number">
+                        </div> 
+                        <div class="form-control">
+                            <input type="text" name="message" placeholder="Message" required>
+                        </div> 
+                        <input type="submit" value="Send" class="btn btn-primary">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <h1>Eldar Kepic</h1>
+        </div>
+    </footer>
+    
+
 
 </body>
 </html>
